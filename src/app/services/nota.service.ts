@@ -3,13 +3,14 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, shareReplay, switchMap } from 'rxjs';
 import { Nota } from 'src/app/models/nota';
 import { Categoria } from '../models/categoria';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root', // App module
 })
 export class NotaService {
-  private NOTAS_API_URL = 'http://localhost:3000/notas';
-  private CATEGORIAS_API_URL = 'http://localhost:3000/categorias';
+  private NOTAS_API_URL = `${environment.API_URL}/api/notas`;
+  private CATEGORIAS_API_URL = `${environment.API_URL}/api/categorias`;
 
   constructor(private http: HttpClient) {}
 
