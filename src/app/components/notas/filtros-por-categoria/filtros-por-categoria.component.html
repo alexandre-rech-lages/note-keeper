@@ -1,0 +1,21 @@
+<div class="row g-2">
+  <div class="col-6 col-lg-1">
+    <span
+      (click)="selecionarTodas()"
+      ngbTooltip="Todas as notas"
+      placement="left"
+      class="app-badge-filtro badge rounded-pill bg-primary w-100 p-2 fs-6 fw-semibold"
+      >Todas</span
+    >
+  </div>
+
+  <div class="col-6 col-lg-1" *ngFor="let categoria of categorias">
+    <span
+      (click)="selecionarComFiltro(categoria)"
+      ngbTooltip="Filtrar por categoria: {{ categoria.titulo }}"
+      placement="bottom"
+      class="app-badge-filtro badge rounded-pill bg-primary w-100 p-2 fs-6 fw-semibold"
+      >{{ categoria.titulo.split(" ")[0] }}</span
+    >
+  </div>
+</div>

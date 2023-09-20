@@ -1,0 +1,62 @@
+{
+  "categorias": [
+    {
+      "titulo": "Lazer",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "titulo": "Mercado"
+    },
+    {
+      "id": 3,
+      "titulo": "Trabalho"
+    },
+    {
+      "titulo": "Estudo",
+      "id": 4
+    }
+  ],
+  "notas": [
+    {
+      "id": 1,
+      "titulo": "Lavar o cachorro 🦮",
+      "conteudo": "Pegar o shampoo > pegar a toalha",
+      "tema": "warning",
+      "categoriaId": 1,
+      "arquivada": false
+    },
+    {
+      "id": 2,
+      "titulo": "Planejar as Aulas de Angular",
+      "conteudo": "Pesquisar material",
+      "tema": "info",
+      "categoriaId": 3,
+      "arquivada": false
+    },
+    {
+      "id": 3,
+      "titulo": "Atualizar Aplicações Angular",
+      "conteudo": "Preparar projetos para as aulas",
+      "tema": "danger",
+      "categoriaId": 3,
+      "arquivada": false
+    },
+    {
+      "titulo": "Teste Insomnia",
+      "conteudo": "Teste realizado pelo client do Insomnia",
+      "tema": "danger",
+      "categoriaId": "2",
+      "id": 4,
+      "arquivada": true
+    },
+    {
+      "id": 5,
+      "titulo": "Teste com Categoria",
+      "conteudo": "Testando",
+      "categoriaId": "4",
+      "tema": "danger",
+      "arquivada": true
+    }
+  ]
+}

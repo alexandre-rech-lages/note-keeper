@@ -1,0 +1,28 @@
+<!-- Navbar -->
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid d-flex align-items-center px-lg-4">
+    <a class="navbar-brand text-primary fw-semibold" routerLink="/">
+      <i class="bi bi-bookmarks-fill"></i>
+      NoteKeeper
+    </a>
+
+    <div class="d-flex gap-2">
+      <a routerLink="/categorias/listar" class="nav-link">
+        <button
+          routerLinkActive="btn-primary text-light"
+          class="btn btn-outline-primary px-4"
+        >
+          Categorias
+        </button>
+      </a>
+      <a routerLink="/notas/listar" class="nav-link">
+        <button
+          routerLinkActive="btn-primary text-light"
+          class="btn btn-outline-primary px-4"
+        >
+          Notas
+        </button>
+      </a>
+    </div>
+  </div>
+</nav>
